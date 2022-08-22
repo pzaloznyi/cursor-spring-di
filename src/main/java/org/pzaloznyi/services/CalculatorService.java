@@ -1,8 +1,11 @@
 package org.pzaloznyi.services;
 
+import org.springframework.stereotype.Component;
+
+@Component("calculatorService")
 public class CalculatorService {
-    private PlusService plusService;
-    private MinusService minusService;
+    private final PlusService plusService;
+    private final MinusService minusService;
 
     public CalculatorService(PlusService plusService, MinusService minusService) {
 
